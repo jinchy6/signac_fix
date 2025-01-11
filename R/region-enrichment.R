@@ -88,8 +88,8 @@ TSSEnrichment <- function(
   }
   
   # exclude chrM
-  sn <- seqnames(x = tss.positions)
-  tss.positions <- tss.positions[!as.character(sn) %in% c("chrM", "Mt", "MT")]
+  #sn <- seqnames(x = tss.positions)
+  #tss.positions <- tss.positions[!as.character(sn) %in% c("chrM", "Mt", "MT")]
   
   if (fast) {
     # just compute the TSS enrichment score without storing the full matrix
